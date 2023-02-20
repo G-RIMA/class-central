@@ -159,7 +159,32 @@
 </script>
 
 <!-- Adding google-translate button -->
-<div id="google_translate_element"><button>Change language</button></div>
+<div id="google_translate_element"></div>
+<style type="text/css">
+  /* Add styling for the Google Translate button */
+  #google_translate_element {
+    display: inline-block;
+    margin: 10px;
+  }
+  .goog-te-menu-value {
+    color: #444;
+  }
+  .goog-te-menu-value span {
+    padding: 2px 5px;
+    border-radius: 4px;
+    background-color: #eee;
+  }
+  .goog-te-menu2 {
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .goog-te-menu2-item:hover {
+    background-color: #eee;
+  }
+</style>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'hi', includedLanguages: 'hi,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
